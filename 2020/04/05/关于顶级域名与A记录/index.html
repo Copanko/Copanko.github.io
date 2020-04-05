@@ -6,22 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>自定义域名的初次使用 | 江城畔口</title>
+  <title>关于顶级域名与A记录 | 江城畔口</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="拥有一个属于自己的域名更简洁的连接你的博客本文适用于已拥有github上的博客的人群">
+  <meta name="description" content="昨天搞一天域名发现一件怪事首先根据官网的说明顶级域名必须使用A记录来连接">
 <meta property="og:type" content="article">
-<meta property="og:title" content="自定义域名的初次使用">
-<meta property="og:url" content="http://yoursite.com/2020/04/05/note/index.html">
+<meta property="og:title" content="关于顶级域名与A记录">
+<meta property="og:url" content="http://yoursite.com/2020/04/05/%E5%85%B3%E4%BA%8E%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E4%B8%8EA%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="江城畔口">
-<meta property="og:description" content="拥有一个属于自己的域名更简洁的连接你的博客本文适用于已拥有github上的博客的人群">
+<meta property="og:description" content="昨天搞一天域名发现一件怪事首先根据官网的说明顶级域名必须使用A记录来连接">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/2020/04/05/note/e1.png">
-<meta property="article:published_time" content="2020-04-04T16:05:00.000Z">
-<meta property="article:modified_time" content="2020-04-04T10:32:52.037Z">
+<meta property="article:published_time" content="2020-04-05T04:50:18.000Z">
+<meta property="article:modified_time" content="2020-04-05T09:11:59.603Z">
 <meta property="article:author" content="Panko">
-<meta property="article:tag" content="教程">
+<meta property="article:tag" content="杂谈time">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/04/05/note/e1.png">
   
     <link rel="alternative" href="/atom.xml" title="江城畔口" type="application/atom+xml">
   
@@ -153,38 +151,30 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-note" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-关于顶级域名与A记录" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      自定义域名的初次使用
+      关于顶级域名与A记录
     </h1>
   
 
         
-        <a href="/2020/04/05/note/" class="archive-article-date">
-  	<time datetime="2020-04-04T16:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
+        <a href="/2020/04/05/%E5%85%B3%E4%BA%8E%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E4%B8%8EA%E8%AE%B0%E5%BD%95/" class="archive-article-date">
+  	<time datetime="2020-04-05T04:50:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>拥有一个属于自己的域名<br>更简洁的连接你的博客<br>本文适用于<br>已拥有github上的博客的人群</p>
+        <p>昨天搞一天域名<br>发现一件怪事<br>首先根据官网的说明<br>顶级域名必须使用A记录来连接</p>
 <a id="more"></a>
-
-<hr>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p><strong>购买域名</strong><br>大致挑一个便宜的就行<br>一般来说域名按年购买<br>首年较为便宜（如果打折就更便宜了<br>不同域名价位不同<br>目前较为便宜的有<br>top、xyz、icu（？？？等</p>
-<p><strong>DNS解析</strong><br>随便找一家DNS解析的网站<br>一般来说都是有免费的<br>跟随流程注册并绑定你的域名<br>下文以cloudflare为例</p>
-<p>以上两部分一般都是<br>看你找的网站顺着流程不会出错的<br>所以具体过程就咕啦</p>
-<hr>
-<h2 id="github设置"><a href="#github设置" class="headerlink" title="github设置"></a>github设置</h2><p>首先在你的本地public文件夹里<br>新建一个CNAME文件（没有后缀<br>用记事本打开并输入你想要的域名<br>比如我买了example.com域名<br>那么你可以选择输入<br>[你想要的子域名].example.com（例如blog.example.com<br>输入hexo d -g来上传至github<br>你可以上线查看你的setting里是否已经改为了自定义域名</p>
-<hr>
-<h2 id="DNS解析设置"><a href="#DNS解析设置" class="headerlink" title="DNS解析设置"></a>DNS解析设置</h2><p>打开DNS设置<br><img src="/2020/04/05/note/e1.png" alt="DNS"><br>选择添加记录<br>再选择CNAME<br>第二栏填[你想要的子域名]<br>第三栏填yourname.github.io<br>点击保存</p>
-<p>完工<br>打开新域名试一试吧</p>
+<p>但是<br>在使用时经常会出现无法再次连接<br>或者干脆github端就直接未绑定<br>最后十分无奈<br>只好使用子域名blog.panko.buzz<br>并使用CNAME记录<br>连接是稳定了<br>但总觉得买了一个域名<br>又不需要绑定其他网站<br>却只能使用子域名没有发挥出它的价值</p>
+<p>(现已解决)</p>
 
       
 
@@ -219,7 +209,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">杂谈time</a>
         		</li>
       		
 		</ul>
@@ -275,7 +265,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/05/note/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/05/%E5%85%B3%E4%BA%8E%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E4%B8%8EA%E8%AE%B0%E5%BD%95/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -289,18 +279,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/04/05/talk/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/04/05/%E6%89%A9%E5%B1%95-%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E8%BF%9E%E6%8E%A5github/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          关于顶级域名与A记录
+          扩展-顶级域名连接github
         
       </div>
     </a>
   
   
-    <a href="/2020/04/04/diary/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">平凡者与伟人</div>
+    <a href="/2020/04/05/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">自定义域名的使用方法</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -426,11 +416,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">方法</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">方法</a>
+                <a href="javascript:void(0)" class="js-tag color2">杂谈time</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -439,10 +433,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">问题/错误</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">杂谈time</a>
               </li>
             
             <div class="clearfix"></div>
