@@ -6,22 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>自定义域名的使用方法 | 江城畔口</title>
+  <title>备份hexo源文件 | 江城畔口</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="拥有一个属于自己的域名更简洁的连接你的博客本文适用于已拥有github上的博客的人群">
+  <meta name="description" content="备份源文件是十分重要的如果源文件丢失你将失去文本模板、文档排版、设置等这里介绍通过github备份">
 <meta property="og:type" content="article">
-<meta property="og:title" content="自定义域名的使用方法">
-<meta property="og:url" content="http://yoursite.com/2020/04/05/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="备份hexo源文件">
+<meta property="og:url" content="http://yoursite.com/posts/1513f89.html">
 <meta property="og:site_name" content="江城畔口">
-<meta property="og:description" content="拥有一个属于自己的域名更简洁的连接你的博客本文适用于已拥有github上的博客的人群">
+<meta property="og:description" content="备份源文件是十分重要的如果源文件丢失你将失去文本模板、文档排版、设置等这里介绍通过github备份">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/2020/04/05/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/e1.png">
-<meta property="article:published_time" content="2020-04-04T16:05:00.000Z">
-<meta property="article:modified_time" content="2020-04-06T11:14:11.805Z">
+<meta property="article:published_time" content="2020-04-03T07:35:50.000Z">
+<meta property="article:modified_time" content="2020-04-06T11:11:58.655Z">
 <meta property="article:author" content="Panko">
-<meta property="article:tag" content="教程">
+<meta property="article:tag" content="方法">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/04/05/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/e1.png">
   
     <link rel="alternative" href="/atom.xml" title="江城畔口" type="application/atom+xml">
   
@@ -153,38 +151,68 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-自定义域名的使用方法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-备份hexo源文件" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      自定义域名的使用方法
+      备份hexo源文件
     </h1>
   
 
         
-        <a href="/2020/04/05/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-04-04T16:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
+        <a href="/posts/1513f89.html" class="archive-article-date">
+  	<time datetime="2020-04-03T07:35:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>拥有一个属于自己的域名<br>更简洁的连接你的博客<br>本文适用于<br>已拥有github上的博客的人群</p>
+        <p>备份源文件是十分重要的<br>如果源文件丢失<br>你将失去<br>文本模板、文档排版、设置等<br>这里介绍通过github备份</p>
 <a id="more"></a>
 
 <hr>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p><strong>购买域名</strong><br>大致挑一个便宜的就行<br>一般来说域名按年购买<br>首年较为便宜（如果打折就更便宜了<br>不同域名价位不同<br>目前较为便宜的有<br>top、xyz、icu（？？？等</p>
-<p><strong>DNS解析</strong><br>随便找一家DNS解析的网站<br>一般来说都是有免费的<br>跟随流程注册并绑定你的域名<br>下文以cloudflare为例</p>
-<p>以上两部分一般都是<br>看你找的网站顺着流程不会出错的<br>所以具体过程就咕啦</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先新建你需要的备份分支<br>我这里新建了back-up分支<br>在一个风水比较好的地方新建一个你想要的文件夹<br>以此打开git bash（之后也都将是这个而非cmd）<br>输入</p>
+<blockquote>
+<p>git clone <a href="mailto:git@github.com">git@github.com</a>:你的名字/你的名字.github.io.git</p>
+</blockquote>
+<p>再从 你的名字.github.io再次打开git bash<br>删光该文档内所有文件并把你的hexo源文件内以下文件搬过来</p>
+<pre><code>_config.yml，themes/，source/，scaffolds/，package.json，.gitignore</code></pre><p>删除theme内主题的.git文件（这个文件是隐藏的而且有些主题可能没有<br>再输入</p>
+<blockquote>
+<p>npm install</p>
+</blockquote>
+<blockquote>
+<p>npm install hexo-deployer-git</p>
+</blockquote>
 <hr>
-<h2 id="github设置"><a href="#github设置" class="headerlink" title="github设置"></a>github设置</h2><p>首先在你的本地public文件夹里<br>新建一个CNAME文件（没有后缀<br>用记事本打开并输入你想要的域名<br>比如我买了example.com域名<br>那么你可以选择输入<br>[你想要的子域名].example.com（例如blog.example.com<br>输入hexo d -g来上传至github<br>你可以上线查看你的setting里是否已经改为了自定义域名<br>如果需要连接顶级域名即example.com<br>请查看另一篇<br><a href="/posts/e316bdd0.html">扩展-顶级域名连接github</a></p>
+<h2 id="备份操作"><a href="#备份操作" class="headerlink" title="备份操作"></a>备份操作</h2><p>首先输入</p>
+<blockquote>
+<p>git add .</p>
+</blockquote>
+<p>记得有一个点<br>这里是把文件加入暂存区</p>
+<blockquote>
+<p>git commit -m “随便输点什么”</p>
+</blockquote>
+<p>将暂存区里的改动给提交到本地的版本库<br>最后输入</p>
+<blockquote>
+<p>git push origin 你的分支名称</p>
+</blockquote>
+<p>上传至github</p>
 <hr>
-<h2 id="DNS解析设置"><a href="#DNS解析设置" class="headerlink" title="DNS解析设置"></a>DNS解析设置</h2><p>打开DNS设置<br><img src="/2020/04/05/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/e1.png" alt="DNS"><br>选择添加记录<br>再选择CNAME<br>第二栏填[你想要的子域名]<br>第三栏填yourname.github.io<br>点击保存</p>
-<p>完工<br>打开新域名试一试吧</p>
+<h2 id="恢复博客"><a href="#恢复博客" class="headerlink" title="恢复博客"></a>恢复博客</h2><p>在github内下载你备份的文件（并解压）</p>
+<p>打开git bash<br>依次输入以下代码以安装npm</p>
+<blockquote>
+<p>npm install hexo-cli -g</p>
+</blockquote>
+<blockquote>
+<p>npm install</p>
+</blockquote>
+<blockquote>
+<p>npm install hexo-deployer-git</p>
+</blockquote>
 
       
 
@@ -196,7 +224,7 @@
     
     <br>
     <strong>本站链接：</strong>
-    http://yoursite.com
+    http://yoursite.com/posts/1513f89.html
     <br>
     <strong>版权声明：</strong>
     本作品采用
@@ -236,7 +264,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">方法</a>
         		</li>
       		
 		</ul>
@@ -292,7 +320,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/05/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/posts/1513f89.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -306,18 +334,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/04/05/%E5%85%B3%E4%BA%8E%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E4%B8%8EA%E8%AE%B0%E5%BD%95/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/1ea6a683.html" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          关于顶级域名与A记录
+          平凡者与伟人
         
       </div>
     </a>
   
   
-    <a href="/2020/04/04/%E5%B9%B3%E5%87%A1%E8%80%85%E4%B8%8E%E4%BC%9F%E4%BA%BA/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">平凡者与伟人</div>
+    <a href="/posts/b2cd97f0.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用方法-布局layout</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -443,15 +471,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">方法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">杂谈time</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">方法</a>
               </li>
              
               <li class="article-tag-list-item">

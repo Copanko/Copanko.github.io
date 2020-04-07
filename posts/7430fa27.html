@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>扩展-顶级域名连接github | 江城畔口</title>
+  <title>解决：Warning:Your consle font probably doesn&#39;t support Unicode | 江城畔口</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="先是测试了一天目前顶级域名是稳定了但是连接有点慢想想还是决定先写了吧">
+  <meta name="description" content="这个错误发现于我上传最后一篇教程时可能之前就出现过但是没注意到因为并没有造成文档上传失败">
 <meta property="og:type" content="article">
-<meta property="og:title" content="扩展-顶级域名连接github">
-<meta property="og:url" content="http://yoursite.com/2020/04/05/%E6%89%A9%E5%B1%95-%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E8%BF%9E%E6%8E%A5github/index.html">
+<meta property="og:title" content="解决：Warning:Your consle font probably doesn&#39;t support Unicode">
+<meta property="og:url" content="http://yoursite.com/posts/7430fa27.html">
 <meta property="og:site_name" content="江城畔口">
-<meta property="og:description" content="先是测试了一天目前顶级域名是稳定了但是连接有点慢想想还是决定先写了吧">
+<meta property="og:description" content="这个错误发现于我上传最后一篇教程时可能之前就出现过但是没注意到因为并没有造成文档上传失败">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-05T09:28:53.000Z">
-<meta property="article:modified_time" content="2020-04-07T01:45:53.965Z">
+<meta property="og:image" content="http://yoursite.com/posts/7430fa27.htm/question.png">
+<meta property="article:published_time" content="2020-04-02T13:55:05.000Z">
+<meta property="article:modified_time" content="2020-04-06T11:11:58.669Z">
 <meta property="article:author" content="Panko">
-<meta property="article:tag" content="教程">
+<meta property="article:tag" content="问题&#x2F;错误">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/posts/7430fa27.htm/question.png">
   
     <link rel="alternative" href="/atom.xml" title="江城畔口" type="application/atom+xml">
   
@@ -151,31 +153,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-扩展-顶级域名连接github" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-解决：WarningYourfont" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      扩展-顶级域名连接github
+      解决：Warning:Your consle font probably doesn&#39;t support Unicode
     </h1>
   
 
         
-        <a href="/2020/04/05/%E6%89%A9%E5%B1%95-%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E8%BF%9E%E6%8E%A5github/" class="archive-article-date">
-  	<time datetime="2020-04-05T09:28:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
+        <a href="/posts/7430fa27.html" class="archive-article-date">
+  	<time datetime="2020-04-02T13:55:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>先是测试了一天<br>目前顶级域名是稳定了<br>但是连接有点慢<br>想想还是决定先写了吧</p>
+        <p>这个错误发现于我上传最后一篇教程时<br>可能之前就出现过<br>但是没注意到<br>因为并没有造成文档上传失败</p>
 <a id="more"></a>
-<p>首先请先确保你已经学会如何使用子域名<br>接着<br>通过查看github帮助<br>顶级域名的添加栏<br>获得4个ip<br>通过A记录将顶级域名绑定到4个ip上<br>等待几分钟<br>即可连接</p>
-<p>这里额外补充我出现的错误<br>github中显示已连接<br>但是输入域名无法加载<br>最后通过关闭github里https解决</p>
-<p>这个解决过程实在曲折<br>以后再写一篇吧</p>
+
+<hr>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p><img src="/posts/7430fa27.htm/question.png" alt="问题"></p>
+<hr>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>打开cmd<br>标题右击打开属性<br>打开字体修改为新宋体<br>问题解决</p>
+<hr>
+<h2 id="解决流程"><a href="#解决流程" class="headerlink" title="解决流程"></a>解决流程</h2><p>首先我先百度该句话前半段<br>warning your console font<br>搜索到几篇类似文章<br>解决方法为<br>git config core.quotepath off<br>git config –unset i18n.logoutputencoding<br>git config –unset i18n.commitencoding<br>我仔细一看不对吧太奇怪了<br>本着尝试的心输入了<br>提示找不到地址（大概是这个意思吧<br>然后我观察了这几篇文章都是输入git commit时出错<br>说明问题找错了（因为我根本不用这个指令<br>最后我在百度里找到一篇与众不同的答案<br>就是字体不对</p>
+<hr>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>注意审题<br>出问题时有提示改字体<br>（但是不百度连字体怎么改都不知道<br>其实问题很简单（而且没造成什么后果</p>
 
       
 
@@ -187,7 +195,7 @@
     
     <br>
     <strong>本站链接：</strong>
-    http://yoursite.com
+    http://yoursite.com/posts/7430fa27.html
     <br>
     <strong>版权声明：</strong>
     本作品采用
@@ -227,7 +235,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">问题/错误</a>
         		</li>
       		
 		</ul>
@@ -283,7 +291,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/05/%E6%89%A9%E5%B1%95-%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E8%BF%9E%E6%8E%A5github/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/posts/7430fa27.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -297,18 +305,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/04/05/hexo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/b2cd97f0.html" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          hexo上传图片
+          使用方法-布局layout
         
       </div>
     </a>
   
   
-    <a href="/2020/04/05/%E5%85%B3%E4%BA%8E%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E4%B8%8EA%E8%AE%B0%E5%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">关于顶级域名与A记录</div>
+    <a href="/posts/80768924.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">最终方案</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -434,15 +442,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">方法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">杂谈time</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">方法</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>hexo上传图片 | 江城畔口</title>
+  <title>使用方法-布局layout | 江城畔口</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo上传图片可以通过图床-上传图片到特定网站再通过url连接到博客或通过本篇讲的插件达成连接">
+  <meta name="description" content="在寻找最新修改日期如何显示的过程中我在官网上找到了关于layout的使用可以较为方便的建立新的文档">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo上传图片">
-<meta property="og:url" content="http://yoursite.com/2020/04/05/hexo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/index.html">
+<meta property="og:title" content="使用方法-布局layout">
+<meta property="og:url" content="http://yoursite.com/posts/b2cd97f0.html">
 <meta property="og:site_name" content="江城畔口">
-<meta property="og:description" content="hexo上传图片可以通过图床-上传图片到特定网站再通过url连接到博客或通过本篇讲的插件达成连接">
+<meta property="og:description" content="在寻找最新修改日期如何显示的过程中我在官网上找到了关于layout的使用可以较为方便的建立新的文档">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-05T11:56:44.000Z">
-<meta property="article:modified_time" content="2020-04-06T11:11:58.651Z">
+<meta property="og:image" content="http://yoursite.com/posts/b2cd97f0.htm/ex1.png">
+<meta property="article:published_time" content="2020-04-03T03:41:39.000Z">
+<meta property="article:modified_time" content="2020-04-06T11:11:58.653Z">
 <meta property="article:author" content="Panko">
 <meta property="article:tag" content="方法">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/posts/b2cd97f0.htm/ex1.png">
   
     <link rel="alternative" href="/atom.xml" title="江城畔口" type="application/atom+xml">
   
@@ -151,38 +153,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo上传图片" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-使用方法-布局layout" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo上传图片
+      使用方法-布局layout
     </h1>
   
 
         
-        <a href="/2020/04/05/hexo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" class="archive-article-date">
-  	<time datetime="2020-04-05T11:56:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
+        <a href="/posts/b2cd97f0.html" class="archive-article-date">
+  	<time datetime="2020-04-03T03:41:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>hexo上传图片可以通过<br>图床-上传图片到特定网站<br>再通过url连接到博客<br>或通过本篇讲的插件达成连接</p>
+        <p>在寻找最新修改日期如何显示的过程中<br>我在官网上找到了关于layout的使用<br>可以较为方便的建立新的文档</p>
 <a id="more"></a>
-<p>首先安装插件</p>
+<p>官网中介绍了如下内容</p>
+<p><img src="/posts/b2cd97f0.htm/ex1.png" alt="布局"></p>
+<p>从中我们可以看到<br>我们可以通过</p>
 <blockquote>
-<p>npm install <a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="noopener">https://github.com/CodeFalling/hexo-asset-image</a> –save</p>
+<p>hexo n [布局名称] &lt;文档名称&gt;</p>
 </blockquote>
-<p>其次确定你的config中post_asset_folder设定为true<br>那么你在通过</p>
-<blockquote>
-<p>hexo n “”</p>
-</blockquote>
-<p>生成文件时便会生成一个同名文件夹<br>在你需要使用图片时<br>就可以通过输入<br><strong>! [图片备注] (图片名.jpg)</strong><br>来插入图片<br>图片放在同名文件夹中</p>
-<p>本篇原来不打算写的<br>毕竟图床的效果也一样<br>就当是记录记录代码吧</p>
+<p>来创建新的md文件<br>其中布局名称可以省略<br>如果省略则默认为post布局</p>
+<p>并且相同格式的文档会自动保存在_post文件夹中</p>
+<p>那么我们就可以通过在<br>源文件夹\Scaffolds文件夹中<br>创建新的md文件并自行配置需要的模板<br>并通过创建时自行添加layout数值<br>来达成文件快速建立</p>
 
       
 
@@ -194,7 +195,7 @@
     
     <br>
     <strong>本站链接：</strong>
-    http://yoursite.com
+    http://yoursite.com/posts/b2cd97f0.html
     <br>
     <strong>版权声明：</strong>
     本作品采用
@@ -290,7 +291,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/05/hexo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/posts/b2cd97f0.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -304,18 +305,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/04/06/%E9%9A%8F%E6%89%8B%E6%B7%BB%E5%8A%A0%E7%9A%84%E6%8F%92%E4%BB%B6/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/1513f89.html" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          随手添加的插件
+          备份hexo源文件
         
       </div>
     </a>
   
   
-    <a href="/2020/04/05/%E6%89%A9%E5%B1%95-%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E8%BF%9E%E6%8E%A5github/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">扩展-顶级域名连接github</div>
+    <a href="/posts/7430fa27.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">解决：Warning:Your consle font probably doesn&#39;t support Unicode</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -441,15 +442,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">方法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">杂谈time</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">方法</a>
               </li>
              
               <li class="article-tag-list-item">
