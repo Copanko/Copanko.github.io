@@ -19,7 +19,7 @@
 <meta property="og:image" content="https://panko.buzz/posts/10760/wrong2.png">
 <meta property="og:image" content="https://panko.buzz/posts/10760/change.png">
 <meta property="article:published_time" content="2020-04-07T04:55:14.000Z">
-<meta property="article:modified_time" content="2020-04-07T05:21:19.434Z">
+<meta property="article:modified_time" content="2020-04-07T05:24:18.272Z">
 <meta property="article:author" content="Panko">
 <meta property="article:tag" content="问题&#x2F;错误">
 <meta name="twitter:card" content="summary">
@@ -181,9 +181,9 @@
 <hr>
 <h2 id="问题-错误"><a href="#问题-错误" class="headerlink" title="问题/错误"></a>问题/错误</h2><p>安装后图片的链接变为<br><img src="/posts/10760/wrong1.png" alt="wrong"><br>查看图片出现<br><img src="/posts/10760/wrong2.png" alt="wrong"></p>
 <hr>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>打开源文件\node_modules\hexo-asset-image\index.js<br>修改</p>
-<pre><code>var endPos = link.length-1;</code></pre><p>为</p>
-<pre><code>var endPos = link.length-5;</code></pre><p>如图所示<br><img src="/posts/10760/change.png" alt="change"></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>打开源文件\node_modules\hexo-asset-image\index.js<br>修改<br>    var endPos = link.length-1;</p>
+<p>为<br>    var endPos = link.length-5;</p>
+<p>如图所示<br><img src="/posts/10760/change.png" alt="change"></p>
 <hr>
 <h2 id="解决流程"><a href="#解决流程" class="headerlink" title="解决流程"></a>解决流程</h2><p>首先我先查看了asset-image的更新记录<br>发现在两年前修复过关于abbrlink的bug<br>但经过解决的描述似乎与我出现的问题并非一体<br>在网上搜索结果好像也文不对题<br>无奈之下我自己翻起了源代码<br>（完全看不懂<br>但是从错误中可以发现似乎是因为文件夹的名称多了.htm后缀导致的<br>于是我猜测代码中可能是通过类似link（链接）或url等删去结尾的字母来链接图片<br>于是我发现了这句<br>link.length-1<br>正好是把长度减一<br>然后我试着把-1改为了-5（来达到删去.html五个字符）<br>问题解决</p>
 <hr>
