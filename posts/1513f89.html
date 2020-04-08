@@ -367,8 +367,9 @@
   
   <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
 
-import 'gitalk/dist/gitalk.css'
-import Gitalk from 'gitalk'
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
 
 if(true){
 	var gitalk = new Gitalk({
@@ -378,7 +379,8 @@ if(true){
   	owner: 'Copanko',
   	admin: ['Copanko'],
   	id: 'Fri Apr 03 2020 15:35:50 GMT+0800',
-  	distractionFreeMode: 'true'
+  　distractionFreeMode: 'true'
+  　createIssueManually: true
 })
 gitalk.render('gitalk-container') 
 }
