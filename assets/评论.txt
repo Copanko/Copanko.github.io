@@ -1,0 +1,66 @@
+﻿虽然gitment可以实现评论功能，但是适配方面做的并不好，这里借用GitHub上的gitalk项目用来优化个人博客的评论功能
+下面记录自己从gitment到gitalk的替换过程：
+
+1.在layout/_partial/post目录下新增gitalk.ejs文件
+代码如下：
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+
+if(<%=theme.gitalk.enable%>){
+	var gitalk = new Gitalk({
+  	clientID: '<%=theme.gitalk.ClientID%>',
+  	clientSecret: '<%=theme.gitalk.ClientSecret%>',
+  	repo: '<%=theme.gitalk.repo%>',
+  	owner: '<%=theme.gitalk.githubID%>',
+  	admin: ['<%=theme.gitalk.adminUser%>'],
+  	id: '<%= page.date %>',
+  	distractionFreeMode: '<%=theme.gitalk.distractionFreeMode%>'
+})
+gitalk.render('gitalk-container') 
+}
+</script>
+
+2.修改source-src/css/目录下comment.scss文件
+代码如下：
+
+#disqus_thread, .duoshuo, .cloud-tie-wrapper, #SOHUCS, #gitment-ctn, #gitalk-container {
+	padding: 0 30px !important;
+	min-height: 20px;
+}
+
+#SOHUCS {
+	#SOHU_MAIN .module-cmt-list .block-cont-gw {
+		border-bottom: 1px dashed #c8c8c8 !important;
+	}
+}
+3.在layout/_partial目录下的article.ejs文件内新增gitalk相关的配置代码：
+代码如下：
+
+<% if(theme.gitalk.enable){ %>
+  <%- partial('post/gitalk', {
+      key: post.slug,
+      title: post.title,
+      url: config.url+url_for(post.path)
+    }) %>
+  <% } %>
+在这里插入图片描述
+
+4.在yilia主题配置文件(_config.yml)中新增gitalk相关的配置：
+代码如下：
+
+gitalk:
+  enable: true #是否开启
+  githubID: liu1340308350 #你的Github用户名
+  repo: liu1340308350.github.io #Github仓库名称
+  ClientID: d59609200a63b0ee33de #创建的Application ClientID
+  ClientSecret: d5eb433efa8075a46a3c6ec2744212acdb1ab01e #创建的Application ClientSecret
+  adminUser: liu1340308350 # 评论初始化账户(GitHub ID)
+  distractionFreeMode: true # 是否开启分心自由模式 也就是免打扰
+记得把gitment的配置注释掉
+
+5.提交更新
+hexo d -g
