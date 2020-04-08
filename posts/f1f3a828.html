@@ -333,23 +333,29 @@
   
 
   
-
   
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "https://panko.buzz/posts/f1f3a828.html",
-  owner: 'Copanko',
-  repo: 'gitment',
-  oauth: {
-    client_id: '278a0f07776f79379166',
-    client_secret: '8c14f704a7e535df6d4a5d47ae3cc2c3a0aa4116',
-  },
+  
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+
+if(true){
+	var gitalk = new Gitalk({
+  	clientID: '278a0f07776f79379166',
+  	clientSecret: '8c14f704a7e535df6d4a5d47ae3cc2c3a0aa4116',
+  	repo: 'gitalk',
+  	owner: 'Copanko',
+  	admin: ['Copanko'],
+  	id: 'Sun Apr 05 2020 19:56:44 GMT+0800',
+  	distractionFreeMode: 'false'
 })
-gitment.render('gitment-ctn')
+gitalk.render('gitalk-container') 
+}
 </script>
+  
+
   
 
 
