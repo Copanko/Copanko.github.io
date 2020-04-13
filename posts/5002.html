@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://panko.buzz">
-  <title>Archives: 2020 | 江城畔口の小站</title>
+  <title>转载-pixiv本地反代恢复直连 | 江城畔口の小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="江城畔口の小站">
-<meta property="og:url" content="https://panko.buzz/archives/2020/page/3/index.html">
+  <meta name="description" content="这篇文章是转载的（你可以发现排版完全不一样本人一般习惯学好后自己写教程但无奈这篇太长了而且自从用了代理后就在也没试过了（今年二月份试过还是有效的于是你就华丽的看到了这篇文章稍微修改了一些敏感词出处： https:&#x2F;&#x2F;2heng.xin&#x2F;2017&#x2F;09&#x2F;19&#x2F;pixiv&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="转载-pixiv本地反代恢复直连">
+<meta property="og:url" content="https://panko.buzz/posts/5002.html">
 <meta property="og:site_name" content="江城畔口の小站">
+<meta property="og:description" content="这篇文章是转载的（你可以发现排版完全不一样本人一般习惯学好后自己写教程但无奈这篇太长了而且自从用了代理后就在也没试过了（今年二月份试过还是有效的于是你就华丽的看到了这篇文章稍微修改了一些敏感词出处： https:&#x2F;&#x2F;2heng.xin&#x2F;2017&#x2F;09&#x2F;19&#x2F;pixiv&#x2F;">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://panko.buzz/posts/5002/Mashiro-Internet-Fake-Authority-CA.th.png">
+<meta property="og:image" content="https://panko.buzz/posts/5002/hostslocation.jpg">
+<meta property="og:image" content="https://panko.buzz/posts/5002/hostsrc.jpg">
+<meta property="article:published_time" content="2020-04-13T13:21:23.000Z">
+<meta property="article:modified_time" content="2020-04-13T13:45:16.995Z">
 <meta property="article:author" content="Copanko">
+<meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://panko.buzz/posts/5002/Mashiro-Internet-Fake-Authority-CA.th.png">
   
     <link rel="alternative" href="/atom.xml" title="江城畔口の小站" type="application/atom+xml">
   
@@ -152,36 +161,94 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-转载-pixiv本地反代恢复直连" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/posts/35aa5673.html" class="archive-article-date">
-  	<time datetime="2020-04-01T04:28:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/posts/35aa5673.html">通过hexo与github建站流程</a>
+    <h1 class="article-title" itemprop="name">
+      转载-pixiv本地反代恢复直连
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/posts/5002.html" class="archive-article-date">
+  	<time datetime="2020-04-13T13:21:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这篇文章是转载的（你可以发现排版完全不一样<br>本人一般习惯学好后自己写教程<br>但无奈这篇太长了<br>而且自从用了代理后就在也没试过了（今年二月份试过还是有效的<br>于是你就华丽的看到了这篇文章<br>稍微修改了一些敏感词<br>出处： <a href="https://2heng.xin/2017/09/19/pixiv/" target="_blank" rel="noopener">https://2heng.xin/2017/09/19/pixiv/</a></p>
+<a id="more"></a>
+<p>以下原文<br>声明：本文仅为方便绘画交流与学习，恕不提供 Pixiv 外其他网站指导！<br>前言<br>自从 2017 年末，Pixiv 的网页和 APP 始终无法直接打开，但是检测发现其 IP 本身并没有被封禁（事实上 P 站用的是日本雅虎 CDN 的 IP，这些 IP 是不能封禁的，否则会误伤其他无关网站），所以只要一点小把戏，并借助平时做网站常用反代理服务器 Nginx 即可以完美绕过针对 SNI 审查，整个代理过程在用户自己的电脑上完成，并不涉及任何第三方服务，因此理论上是完全合法的个人行为。鉴于是小白向的指南，所以不想写太多望而生畏（其实业内并不复杂）内容，如果要问原理请看<a href="https://digi.ninja/blog/domain_fronting.php" target="_blank" rel="noopener">这里</a>。</p>
+<h1 id="Nginx-本地代理"><a href="#Nginx-本地代理" class="headerlink" title="Nginx 本地代理"></a>Nginx 本地代理</h1><h2 id="Windows-使用方法"><a href="#Windows-使用方法" class="headerlink" title="Windows 使用方法"></a>Windows 使用方法</h2><p><a href="https://github.com/mashirozx/Pixiv-Nginx" target="_blank" rel="noopener">此处下载</a>（进去注意往下翻看下载说明）并解压到电脑任意路径中不含中文、日文等非英文字符的位置，之后安装文件名为 ca.cer 的根证书文件，然后参考下方「hosts 修改方法」部分修改 hosts（请使用压缩包里的hosts，因为每次更新都可能变的），最后通过可视化工具或者调试工具启动 Nginx 即可。</p>
+<p>重要提醒：使用 Nginx 反代理的时候建议关闭各类全局代理，如各类 梯子 客户端、浏览器代理插件、某些 steam 代理工具、类似 ADSafe 这样的广告屏蔽软件，如果对 P 站的域名启用了代理，那么 hosts 就无法生效，所以请将他们暂时关闭或者把 P 站相关域名移出代理列表。</p>
+<p>说明：<br>① <a href="https://jingyan.baidu.com/article/c843ea0bc4142a77921e4a79.html" target="_blank" rel="noopener">Chrome 浏览器证书安装方法</a>、<a href="https://jingyan.baidu.com/article/4e5b3e191205d291911e2463.html" target="_blank" rel="noopener">FireFox 浏览器证书安装方法</a>，按键具体位置因浏览器版本而异，可利用浏览器配置界面的搜索框快速查找；其他浏览器请自行寻找安装方法。务必确保 Mashiro Internet Fake Authority CA 已经添加到了受信任机构列表中（如图），遇到浏览器安全提醒说明你一定还没有添加成功。注意：如果遇到浏览器显示网站不可信任，这时即使你点了信任，网页内的图片等内容还是可能被浏览器阻止，最好的解决办法是保证证书安装成功。</p>
+<p><img src="/posts/5002/Mashiro-Internet-Fake-Authority-CA.th.png" alt="我是图"></p>
+<p>② 如果遇到 Nginx 启动失败，首先请确保路径为全英文，可将解压出来的整个文件夹移动到各个磁盘的根目录处；其次自行查看错误日志，通常用搜索引擎直接检索日志里那行信息就可以找到一大堆解决方法了；如需反馈请附上logs/error.log中的日志（摘取出现错误时间点的片段即可，一般在文件最后几行，切勿在我这里发太长的日志）。</p>
+<p>③ 无法启动 Nginx，常见原因是端口被占用(80 或 443 端口，建议先看一下日志)，<a href="https://blog.csdn.net/bad_yixiong/article/details/70267140" target="_blank" rel="noopener">参考端口占用的解决方法</a>。</p>
+<p>④ 很多人说图片显示不出来，可依次尝试把 hosts 中 i.pximg.net 的 IP 改成 210.140.92.140、210.140.92.141、210.140.92.134、210.140.92.135、210.140.92.139、210.140.92.143、210.140.92.137、210.140.92.138 中的任意一个。</p>
+<p>⑤ 可视化工具仅支持 Windows 64 位版，32 位版请尝试通过调试脚本启动，如果都不行请看用<a href="https://github.com/mashirozx/Pixiv-Nginx/wiki/%E7%94%A8-cmd-%E7%AE%A1%E7%90%86-Nginx" target="_blank" rel="noopener"> cmd 管理 Nginx</a><br>。</p>
+<h2 id="MAC-使用方法"><a href="#MAC-使用方法" class="headerlink" title="MAC 使用方法"></a>MAC 使用方法</h2><p>MAC 上同样可以使用 Nginx，详细的 MAC 配置方法请看<a href="http://idayer.com/nginx-reverse-proxy-for-pixiv/" target="_blank" rel="noopener">这篇文章</a>。</p>
+<h2 id="Linux-使用方法"><a href="#Linux-使用方法" class="headerlink" title="Linux 使用方法"></a>Linux 使用方法</h2><p>Nginx 配置文件目录为 /etc/nginx/，使用和 MAC 完全一致的配置文件和证书并替换配置文件即可，最后参考下方「hosts 修改方法」部分的方法修改 hosts（请使用压缩包里的hosts，因为每次更新都可能变的）。</p>
+<h2 id="hosts-修改方法"><a href="#hosts-修改方法" class="headerlink" title="hosts 修改方法"></a>hosts 修改方法</h2><p>以下是针对 Windows 的改法，其他系统类似，可自行百度 hosts 文件的位置。MAC用户看<a href="https://www.imore.com/how-edit-your-macs-hosts-file-and-why-you-would-want" target="_blank" rel="noopener">这里</a>。Linux各发行版：sudo nano /etc/hosts，原则上立即生效。</p>
+<p>用文本编辑器（比如 Notepad++）打开 “C:\Windows\System32\drivers\etc\hosts” 文件（64位和32位系统都是这个路径，不熟悉的注意看下后面的补充及截图），最下方直接粘贴压缩包内 hosts 文件中的内容后保存（遇到权限问题无法保存看<a href="https://jingyan.baidu.com/article/624e7459b194f134e8ba5a8e.html" target="_blank" rel="noopener">这里</a>），这时应该就可以正常访问了。如果仍然无法访问，请按下  + R 键，输入 cmd，回车，进入 cmd 后输入 ipconfig /flushdns，回车执行以刷新DNS缓存，若还不行请尝试清理浏览器缓存、Cookie、停用所有浏览器插件并重启电脑。</p>
+<p>请注意: hosts文件无后缀，无后缀，无后缀！ 同时 hosts 文件中不能有 http://、https:// 等开头和斜杠 /。</p>
+<p>hosts 文件位置如下：</p>
+<p><img src="/posts/5002/hostslocation.jpg" alt="我是图"></p>
+<p>hosts 文件粘贴示例（实际粘贴的内容与图中不完全一致）:</p>
+<p><img src="/posts/5002/hostsrc.jpg" alt="我是图"></p>
+<p>如果你嫌上面的操作太麻烦了，或者极少数电脑原本就没有 hosts 文件，可直接用压缩包内的 hosts 文件覆盖原文件或放到以上 hosts 文件的路径就行了。</p>
+<h2 id="Android-代理方案"><a href="#Android-代理方案" class="headerlink" title="Android 代理方案"></a>Android 代理方案</h2><p>在第三方客户端 Pivision 基础上更换了代理接口、修复了 OAuth 登陆问题，重新打的包改名 PivisionS，<a href="https://apps.2heng.xin/PivisionS/" target="_blank" rel="noopener">这里下载</a>。</p>
+<p>PivisionS 更新记录：</p>
+<p>发布时间    版本号    更新内容<br>2019-09-09 06:30    1.0    修复大陆无法使用的“bug”；更新 OAuth 登陆接口<br>2019-09-09 20:00    5.0.1    更新代理源<br>做这个纯属举手之劳，并且能力也有限，如果嫌慢、功能少请自购 梯子 吧。</p>
+<p>此外也有不少优秀的 Pixiv 第三方客户端可以选择，它们基于类似前文的域前置方法实现了直链访问。比较优秀的两个是 Shaft 和 Pix-EzViewer，这两个 APP 的安装包可以在文章开头的群文件里获取。</p>
+<h2 id><a href="#" class="headerlink" title></a></h2><p>iOS 代理方案 ##<br>抱歉，iOS 客户端除了 梯子 暂时没有更好的办法了（其实像上面 Android 那样做个客户端也不难，几个简单的接口改一下就行了）。</p>
+<h1 id="镜像站"><a href="#镜像站" class="headerlink" title="镜像站"></a>镜像站</h1><p>如果你有自己的服务器的话，可以搭建镜像站，虽然难度不大，但是都有自己服务器了何不直接自建 梯子 呢？而且这显然是不合法的，自己悄悄用就好了。</p>
+<p>相关教程：<a href="https://moe.best/technology/pixiv-proxy.html" target="_blank" rel="noopener">https://moe.best/technology/pixiv-proxy.html</a></p>
+<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><h2 id="无法登陆-注册"><a href="#无法登陆-注册" class="headerlink" title="无法登陆/注册"></a>无法登陆/注册</h2><p>登陆问题在最新版 Nginx 本地代理工具包中解决了，注册的话，可以加文章开头的 QQ 群，找管理员免费代注册。</p>
+<h2 id="关于证书"><a href="#关于证书" class="headerlink" title="关于证书"></a>关于证书</h2><p>这是我自己签的证书，如果你信任我，那么直接安装即可；如果不信任，那么请自己签，自签证书教程。<br>证书十年后到期，到时候记得来找我，haha。</p>
+<h2 id="关于维基百科和-Steam"><a href="#关于维基百科和-Steam" class="headerlink" title="关于维基百科和 Steam"></a>关于维基百科和 Steam</h2><p>Wikipedia、Steam Community 的封锁情况与 P 站完全一致，所以在 mashirozx/Pixiv-Nginx 中都顺便反代了，相应地增加以下 hosts 即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"># Wikipedia Start</span><br><span class="line"># 维基百科语言众多，其他语言参照下面添加 xx.wikipedia.org 及 xx.m.wikipedia.org 的记录即可</span><br><span class="line">127.0.0.1 en.wikipedia.org #英文维基百科桌面版</span><br><span class="line">127.0.0.1 zh.wikipedia.org #中文维基百科桌面版</span><br><span class="line">127.0.0.1 en.m.wikipedia.org #英文维基百科移动版</span><br><span class="line">127.0.0.1 zh.m.wikipedia.org #中文维基百科移动版</span><br><span class="line">127.0.0.1 zh-yue.wikipedia.org #粤文维基百科桌面版</span><br><span class="line">127.0.0.1 wuu.wikipedia.org #吴语维基百科桌面版</span><br><span class="line">127.0.0.1 ug.wikipedia.org #维吾尔文维基百科桌面版</span><br><span class="line">127.0.0.1 ja.wikipedia.org #日文维基百科桌面版</span><br><span class="line"># Wikipedia End</span><br><span class="line"> </span><br><span class="line"># Steam Community</span><br><span class="line">127.0.0.1 store.steampowered.com</span><br><span class="line">127.0.0.1 steamcommunity.com</span><br><span class="line"># Steam Community End</span><br></pre></td></tr></table></figure>
+
+<p>法律适用<br>《国际联网暂行规定》第六条规定：“计算机信息网络直接进行国际联网，必须使用邮电部国家公用电信网提供的国际出入口信道。任何单位和个人不得自行建立或者使用其他信道进行国际联网。”Nginx 本地代理和服务器代理（代理服务器位于广州）使用的都是“公用电信网提供的国际出入口信道”，从日本 Pixiv 服务器到国内用户电脑/代理服务器的流量，使用的是正常流量通道，其间未对流量进行任何额外加密（仅有网页原有的 SSL 加密，用户和代理人并不掌握该 SSL 密钥），而 Nginx 获取到网页数据之后发生的整个代理过程完全在国内，不再适用国际互联网相关之规定。</p>
+<p>其他<br>如果嫌每次手动开启 Nginx 麻烦，可以在确保无端口占用的情况下，将 nginx.exe 的添加到开机启动项中，方法可自行查找，不再赘述。</p>
+<h1 id="作者-Author-：Mashiro"><a href="#作者-Author-：Mashiro" class="headerlink" title="作者(Author)：Mashiro"></a>作者(Author)：Mashiro</h1><h1 id="链接-URL-：https-2heng-xin-2017-09-19-pixiv"><a href="#链接-URL-：https-2heng-xin-2017-09-19-pixiv" class="headerlink" title="链接(URL)：https://2heng.xin/2017/09/19/pixiv/"></a>链接(URL)：<a href="https://2heng.xin/2017/09/19/pixiv/" target="_blank" rel="noopener">https://2heng.xin/2017/09/19/pixiv/</a></h1><h1 id="来源-Source-：樱花庄的白猫"><a href="#来源-Source-：樱花庄的白猫" class="headerlink" title="来源(Source)：樱花庄的白猫"></a>来源(Source)：樱花庄的白猫</h1><p>Q.E.D. </p>
+
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>(๑′ᴗ‵๑) 爱你哦~要支持看看推广吧<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -193,87 +260,128 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://panko.buzz/posts/5002.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/posts/3bc7fa33.html" class="archive-article-date">
-  	<time datetime="2020-03-31T10:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/posts/36068.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">扩展-Gitalk文字样式修改</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/posts/3bc7fa33.html">欢迎来到江城畔口</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/posts/d56b87f7.html" class="archive-article-date">
-  	<time datetime="2020-03-31T08:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/posts/d56b87f7.html">默认的使用教程</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+  
+  
+  
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
+<link rel="stylesheet" href="https://panko.buzz/assets/gitalk.css">
+<script src="https://panko.buzz/assets/gitalk.min.js"></script>
+<script type="text/javascript">
+
+if(true){
+	var gitalk = new Gitalk({
+  	clientID: '278a0f07776f79379166',
+  	clientSecret: '8c14f704a7e535df6d4a5d47ae3cc2c3a0aa4116',
+  	repo: 'gitalk',
+  	owner: 'Copanko',
+  	admin: ['Copanko'],
+  	id: 'Mon Apr 13 2020 21:21:23 GMT+0800',
+  　distractionFreeMode: 'true',
+  　createIssueManually: true
+})
+gitalk.render('gitalk-container') 
+}
+</script>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2020/page/2/">上一页</a><a class="page-number" href="/archives/2020/">1</a><a class="page-number" href="/archives/2020/page/2/">2</a><span class="page-number current">3</span>
-    </nav>
   
 
 
@@ -297,8 +405,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
