@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://panko.buzz">
   <title>转载-pixiv本地反代恢复直连 | 江城畔口の小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这篇文章是转载的（你可以发现排版完全不一样本人一般习惯学好后自己写教程但无奈这篇太长了而且自从用了代理后就在也没试过了（今年二月份试过还是有效的于是你就华丽的看到了这篇文章稍微修改了一些敏感词出处： https:&#x2F;&#x2F;2heng.xin&#x2F;2017&#x2F;09&#x2F;19&#x2F;pixiv&#x2F;">
+  <meta name="description" content="这篇文章是转载的（你可以发现排版完全不一样本人一般习惯学好后自己写教程但无奈这篇太长了而且自从用了代理后就在也没试过了（今年二月份试过还是有效的于是你就华丽的看到了这篇文章稍微修改了一些敏感词">
 <meta property="og:type" content="article">
 <meta property="og:title" content="转载-pixiv本地反代恢复直连">
 <meta property="og:url" content="https://panko.buzz/posts/5002.html">
 <meta property="og:site_name" content="江城畔口の小站">
-<meta property="og:description" content="这篇文章是转载的（你可以发现排版完全不一样本人一般习惯学好后自己写教程但无奈这篇太长了而且自从用了代理后就在也没试过了（今年二月份试过还是有效的于是你就华丽的看到了这篇文章稍微修改了一些敏感词出处： https:&#x2F;&#x2F;2heng.xin&#x2F;2017&#x2F;09&#x2F;19&#x2F;pixiv&#x2F;">
+<meta property="og:description" content="这篇文章是转载的（你可以发现排版完全不一样本人一般习惯学好后自己写教程但无奈这篇太长了而且自从用了代理后就在也没试过了（今年二月份试过还是有效的于是你就华丽的看到了这篇文章稍微修改了一些敏感词">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://panko.buzz/posts/5002/Mashiro-Internet-Fake-Authority-CA.th.png">
 <meta property="og:image" content="https://panko.buzz/posts/5002/hostslocation.jpg">
 <meta property="og:image" content="https://panko.buzz/posts/5002/hostsrc.jpg">
 <meta property="article:published_time" content="2020-04-13T13:21:23.000Z">
-<meta property="article:modified_time" content="2020-04-13T13:45:16.995Z">
+<meta property="article:modified_time" content="2020-04-14T04:49:53.688Z">
 <meta property="article:author" content="Copanko">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
@@ -181,7 +181,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这篇文章是转载的（你可以发现排版完全不一样<br>本人一般习惯学好后自己写教程<br>但无奈这篇太长了<br>而且自从用了代理后就在也没试过了（今年二月份试过还是有效的<br>于是你就华丽的看到了这篇文章<br>稍微修改了一些敏感词<br>出处： <a href="https://2heng.xin/2017/09/19/pixiv/" target="_blank" rel="noopener">https://2heng.xin/2017/09/19/pixiv/</a></p>
+        <p>这篇文章是转载的（你可以发现排版完全不一样<br>本人一般习惯学好后自己写教程<br>但无奈这篇太长了<br>而且自从用了代理后就在也没试过了（今年二月份试过还是有效的<br>于是你就华丽的看到了这篇文章<br>稍微修改了一些敏感词</p>
 <a id="more"></a>
 <p>以下原文<br>声明：本文仅为方便绘画交流与学习，恕不提供 Pixiv 外其他网站指导！<br>前言<br>自从 2017 年末，Pixiv 的网页和 APP 始终无法直接打开，但是检测发现其 IP 本身并没有被封禁（事实上 P 站用的是日本雅虎 CDN 的 IP，这些 IP 是不能封禁的，否则会误伤其他无关网站），所以只要一点小把戏，并借助平时做网站常用反代理服务器 Nginx 即可以完美绕过针对 SNI 审查，整个代理过程在用户自己的电脑上完成，并不涉及任何第三方服务，因此理论上是完全合法的个人行为。鉴于是小白向的指南，所以不想写太多望而生畏（其实业内并不复杂）内容，如果要问原理请看<a href="https://digi.ninja/blog/domain_fronting.php" target="_blank" rel="noopener">这里</a>。</p>
 <h1 id="Nginx-本地代理"><a href="#Nginx-本地代理" class="headerlink" title="Nginx 本地代理"></a>Nginx 本地代理</h1><h2 id="Windows-使用方法"><a href="#Windows-使用方法" class="headerlink" title="Windows 使用方法"></a>Windows 使用方法</h2><p><a href="https://github.com/mashirozx/Pixiv-Nginx" target="_blank" rel="noopener">此处下载</a>（进去注意往下翻看下载说明）并解压到电脑任意路径中不含中文、日文等非英文字符的位置，之后安装文件名为 ca.cer 的根证书文件，然后参考下方「hosts 修改方法」部分修改 hosts（请使用压缩包里的hosts，因为每次更新都可能变的），最后通过可视化工具或者调试工具启动 Nginx 即可。</p>
