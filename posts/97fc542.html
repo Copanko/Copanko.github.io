@@ -15,8 +15,8 @@
 <meta property="og:site_name" content="江城畔口の小站">
 <meta property="og:description" content="这里是我的博客所使用的插件有些是需要用时必要添加有些是为了方便随手改的那么我们开始吧">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-06T11:04:04.000Z">
-<meta property="article:modified_time" content="2020-04-07T04:10:29.461Z">
+<meta property="article:published_time" content="2020-05-06T14:27:08.000Z">
+<meta property="article:modified_time" content="2020-05-06T14:28:05.246Z">
 <meta property="article:author" content="江城畔口">
 <meta property="article:tag" content="方法">
 <meta name="twitter:card" content="summary">
@@ -169,7 +169,7 @@
 
         
         <a href="/posts/97fc542.html" class="archive-article-date">
-  	<time datetime="2020-04-06T11:04:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-06</time>
+  	<time datetime="2020-05-06T14:27:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-06</time>
 </a>
         
       </header>
@@ -178,9 +178,9 @@
       
         <p>这里是我的博客所使用的插件<br>有些是需要用时必要添加<br>有些是为了方便随手改的<br>那么我们开始吧</p>
 <a id="more"></a>
-
+<p>突然发现还有篇文章一直没更新<br>之后这种文章更新就直接改发布日期了<br>方便调至首页<br>原发布日期:2020-04-06 19:04:04 </p>
 <hr>
-<h2 id="链接简洁化"><a href="#链接简洁化" class="headerlink" title="链接简洁化"></a>链接简洁化</h2><p>说是简洁其实没有就是把日期加文章名改为了乱七八糟的随机代码<br>安装</p>
+<h2 id="链接简洁化"><a href="#链接简洁化" class="headerlink" title="链接简洁化"></a>链接简洁化</h2><p>说是简洁其实就是把日期加文章名改为了乱七八糟的随机代码<br>安装</p>
 <blockquote>
 <p>npm install hexo-abbrlink –save</p>
 </blockquote>
@@ -188,7 +188,13 @@
 <blockquote>
 <p>permalink: posts/:abbrlink.html<br>abbrlink:<br>　alg: crc32  # 算法：crc16(default) and crc32<br>　rep: hex    # 进制：dec(default) and hex</p>
 </blockquote>
-<p>后记<br>这个插件会导致我之前提到图片插件失效<br>仅仅存活了半个小时<br>后记2<br>最后我通过邪道自己修复了</p>
+<p>后记<br>这个插件会导致我之前提到图片插件失效<br>仅仅存活了半个小时<br>后记2<br>最后我通过邪道自己修复了<br><a href="/posts/10760.html">具体流程</a></p>
+<hr>
+<h2 id="站点地图"><a href="#站点地图" class="headerlink" title="站点地图"></a>站点地图</h2><p>用于百度谷歌收录<br>意义较小百度爬虫捉不到github的网站<br>安装</p>
+<blockquote>
+<p>npm install hexo-generator-sitemap –save<br>npm install hexo-generator-baidu-sitemap –save</p>
+</blockquote>
+<p>安装好hexo g后会在public文件夹中生成站点地图<br>具体地址为<br>域名/sitemap.xml<br>域名/baidusitemap.xml<br>上传至百度平台即可</p>
 
       
 
@@ -296,18 +302,9 @@
   
 <nav id="article-nav">
   
-    <a href="/posts/10760.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          解决：安装abbrlink后asset-image无法显示
-        
-      </div>
-    </a>
   
-  
-    <a href="/posts/f1f3a828.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">hexo上传图片</div>
+    <a href="/posts/61733.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">简单聊聊域名邮箱</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -326,6 +323,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#链接简洁化"><span class="toc-number">1.</span> <span class="toc-text">链接简洁化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#站点地图"><span class="toc-number">2.</span> <span class="toc-text">站点地图</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -354,7 +364,7 @@ if(true){
   	repo: 'gitalk',
   	owner: 'Copanko',
   	admin: ['Copanko'],
-  	id: 'Mon Apr 06 2020 19:04:04 GMT+0800',
+  	id: 'Wed May 06 2020 22:27:08 GMT+0800',
   　distractionFreeMode: 'true',
   　createIssueManually: true
 })
