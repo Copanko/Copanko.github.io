@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://panko.buzz">
   <title>备份hexo源文件 | 江城畔口の小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="备份源文件是十分重要的如果源文件丢失你将失去文本模板、文档排版、设置等这里介绍通过github备份">
+  <meta name="description" content="备份源文件是十分重要的如果源文件丢失你将失去文本模板、文档排版、设置等本文介绍通过github备份">
 <meta property="og:type" content="article">
 <meta property="og:title" content="备份hexo源文件">
 <meta property="og:url" content="https://panko.buzz/posts/1513f89.html">
 <meta property="og:site_name" content="江城畔口の小站">
-<meta property="og:description" content="备份源文件是十分重要的如果源文件丢失你将失去文本模板、文档排版、设置等这里介绍通过github备份">
+<meta property="og:description" content="备份源文件是十分重要的如果源文件丢失你将失去文本模板、文档排版、设置等本文介绍通过github备份">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-04-03T07:35:50.000Z">
-<meta property="article:modified_time" content="2020-04-06T11:11:58.655Z">
+<meta property="article:modified_time" content="2020-05-21T14:44:00.467Z">
 <meta property="article:author" content="江城畔口">
 <meta property="article:tag" content="方法">
 <meta name="twitter:card" content="summary">
@@ -176,15 +176,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>备份源文件是十分重要的<br>如果源文件丢失<br>你将失去<br>文本模板、文档排版、设置等<br>这里介绍通过github备份</p>
+        <p>备份源文件是十分重要的<br>如果源文件丢失<br>你将失去<br>文本模板、文档排版、设置等<br>本文介绍通过github备份</p>
 <a id="more"></a>
 
 <hr>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先新建你需要的备份分支<br>我这里新建了back-up分支<br>在一个风水比较好的地方新建一个你想要的文件夹<br>以此打开git bash（之后也都将是这个而非cmd）<br>输入</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先新建你需要的备份分支<br>我这里新建了back-up分支<br>在一个风水比较好的地方新建一个你想要的文件夹<br>以此打开git bash（右键菜单里有<br>输入</p>
 <blockquote>
 <p>git clone <a href="mailto:git@github.com">git@github.com</a>:你的名字/你的名字.github.io.git</p>
 </blockquote>
-<p>再从 你的名字.github.io再次打开git bash<br>删光该文档内所有文件并把你的hexo源文件内以下文件搬过来</p>
+<p>再从 你的名字.github.io再次打开git bash<br>删光该文档内除.git外所有文件并把你的hexo源文件内以下文件搬过来</p>
 <pre><code>_config.yml，themes/，source/，scaffolds/，package.json，.gitignore</code></pre><p>删除theme内主题的.git文件（这个文件是隐藏的而且有些主题可能没有<br>再输入</p>
 <blockquote>
 <p>npm install</p>
